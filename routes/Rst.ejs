@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script href="D:/ETE Project/static/Foo.js"></script>
+	<style>
+		.h{
+			margin-top: 100px;
+			text-align: center;
+		}
+		#d1{
+			display:flex;
+			justify-content: center;			
+		}
+		#hh{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<H1 class = "h">BOOKING PAGE</H1>
+	<h3 id = "hh">Welcome  <%= user %></h3><br>
+	<div id = "d1">		
+	<form action="/home/book" method="post">
+	<label>USERNAME:</label><br>
+	<input type="text" name = "name" value="<%= user %>" id = "i1" disabled><br><br>
+	<label>ADDRESS:</label>	<br> 
+	<input type="text" name = "address"><br><br>
+	<label>DATE:</label><br>
+    <input type="date" name = "date"><br><br>
+	<label>Subsidy:</label><br>
+	<label>Yes</label>
+	<input type="radio" name="subsidy" value="s1">&emsp;
+	<label>No</label>	
+	<input type="radio" name="subsidy" value="s2"><br><br> 	
+	<input type="submit" placeholder="Submit">
+	</form>
+</div>
+	
+	
+	<div><p id="p1"></p></div>
+	
+
+</body>
+</html>
+
+
